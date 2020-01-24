@@ -32,7 +32,7 @@ class _LocationScreenState extends State<LocationScreen> {
         weatherMessage =
             'Unable to get weather data. Check that location services is enabled on your device.';
         cityName = '';
-        return;
+        return; // Exits function here if no weather data
       }
       double temp = weatherData['main']['temp'];
       temperature = temp.toInt();
